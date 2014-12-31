@@ -1,7 +1,9 @@
 {
-  "name": "sprite-previewer",
+  "name": "cois-sprite-previewer",
   "version": "1.0.0",
   "license": "MIT",
+  "description": "A sprite previewer accompanying the sprite editor",
+  "main": "sprite.previewer.js",
   "ignore": [
     "**/.*",
     "node_modules",
