@@ -13,6 +13,7 @@
 	this.preview.height = this.model.rows;
 	this.context = this.preview.getContext('2d');
 	this.imageData = this.context.createImageData(this.preview.width, this.preview.height);
+	this.model.forEachPixel(this.paintPixel.bind(this));
     };
     View.prototype.update = function(){
 	this.context.putImageData(this.imageData, 0, 0);
