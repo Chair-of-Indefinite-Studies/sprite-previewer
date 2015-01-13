@@ -1,4 +1,4 @@
-;(function(sprite, undefined){
+;(function(sprite, arrayFor, undefined){
     var preview = sprite.preview = {};
 
     var View = preview.View = function(model, preview){
@@ -20,9 +20,9 @@
     };
     View.prototype.paintPixel = function(x, y, color){
 	var baseIndex = 4 * (this.model.columns * y + x);
-	[0, 0, 0, 255].forEach(function(value, index){
+	arrayFor(color).forEach(function(value, index){
 	    this.data[baseIndex + index] = value;
 	}.bind(this.imageData));
 	this.update();
     };
-})(window.sprite = window.sprite || {})
+})(window.sprite = window.sprite || {}, color.array)
