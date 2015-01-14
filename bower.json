@@ -16,7 +16,7 @@
     "application.js"
   ],
   "dependencies": {
-    "cois-color-array": "~1.0.1"
+    "cois-color-array": "~1.0.2"
   },
   "devDependencies": {
     "jasmine": "~2.1.3",
