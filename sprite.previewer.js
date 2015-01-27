@@ -6,6 +6,7 @@
         this.preview = preview;
         this.initialize();
         this.model.on('paint', this.paintPixel.bind(this));
+        this.model.on('dimension', this.initialize.bind(this));
         this.update();
     };
     View.prototype.initialize = function(){
